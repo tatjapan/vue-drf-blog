@@ -7,7 +7,7 @@ Blog app w/ Django REST framework & Vue.js
 ### Try it right now
 
 ```
-git clone https://github.com/naritotakizawa/django-narito-blog3
+git clone https://github.com/tatjapan/vue-drf-blog
 cd vue-drf-blog/backend
 pip install -r requirements.txt
 python manage.py migrate
@@ -20,7 +20,7 @@ Access tp `http://127.0.0.1:8000/blog/`, and enjoy it!
 ### Install to your project
 
 ```
-pip install https://github.com/naritotakizawa/django-narito-blog3/archive/master.tar.gz
+pip install https://github.com/tatjapan/vue-drf-blog/archive/master.tar.gz
 ```
 
 Add following settings to `settings.py`
