@@ -87,6 +87,15 @@ class Post(models.Model):
     viewnumber = models.IntegerField(verbose_name='閲覧数', validators=[MinValueValidator(0)], default=0)
     created_at = models.DateTimeField('作成日', default=timezone.now)
     updated_at = models.DateTimeField('更新日', default=timezone.now)
+    """ slug設定 """
+    slug = models.SlugField(
+        default='',
+        null=True,
+        blank=True,
+        editable=True,
+        max_length=200,
+        allow_unicode=True,
+    )
     
     def counter_today_unique(self):
         return Counter.objects.filter(post=self).values('ip_address', 'access_at').distinct()

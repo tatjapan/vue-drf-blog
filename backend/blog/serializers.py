@@ -52,7 +52,6 @@ class BasePostSerializer(serializers.ModelSerializer):
     tags = TagSerializer(many=True, read_only=True)
     category = CategorySerializer()
     view_counts = serializers.SerializerMethodField()
-    duration = serializers.SerializerMethodField()
 
     class Meta:
         model = Post
